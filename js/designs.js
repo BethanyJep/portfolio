@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Add staggered animation delays for initial items
   setStaggeredDelays();
+  
+  // Setup mobile menu toggle
+  initMobileMenu();
 });
 
 /**
@@ -106,21 +109,36 @@ window.addEventListener('load', () => {
   const images = document.querySelectorAll('.design-item img');
   
   images.forEach(img => {
+    // Check if image is already broken
+    if (img.complete && img.naturalWidth === 0) {
+      setPlaceholder(img);
+    }
+    
+    // Add listener for future errors
     img.addEventListener('error', function() {
-      this.src = 'images/design-placeholder.jpg';
-      this.alt = 'Design Placeholder';
+      setPlaceholder(this);
     });
   });
+  
+  // Helper function to set placeholder
+  function setPlaceholder(imgElement) {
+    imgElement.src = 'images/design-placeholder.jpg';
+    imgElement.alt = 'Design Placeholder';
+    console.log('Image replaced with placeholder');
+  }
 });
 
 /**
  * Handles mobile menu toggle
  */
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-    const nav = document.querySelector('nav ul');
-    nav.classList.toggle('show');
-    this.querySelector('i').classList.toggle('fa-bars');
-    this.querySelector('i').classList.toggle('fa-times');
-  });
-});
+function initMobileMenu() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function() {
+      const nav = document.querySelector('nav ul');
+      nav.classList.toggle('show');
+      this.querySelector('i').classList.toggle('fa-bars');
+      this.querySelector('i').classList.toggle('fa-times');
+    });
+  }
+}
