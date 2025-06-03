@@ -1,0 +1,717 @@
+/* 
+  Bethany Jep Portfolio CSS
+  A modern, playful design with soft pastel colors
+*/
+
+:root {
+  /* Color palette */
+  --primary-color: #ff9a9e; /* Light pink */
+  --secondary-color: #67d8de; /* Teal accent */
+  --dark-color: #2d3748;
+  --light-color: #f7fafc;
+  --background-color: #ffffff;
+  --accent-color: #ffeaa7; /* Light yellow for accents */
+  
+  /* Typography */
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--dark-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 60px;
+  background: var(--primary-color);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.logo {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+nav ul li a.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+nav ul li a.home-link {
+  color: var(--dark-color);
+  transition: all 0.2s ease;
+}
+
+nav ul li a.home-link:hover, 
+nav ul li a.home-link.active {
+  color: var(--primary-color);
+}
+
+nav ul li a.highlight {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+
+nav ul li a.highlight:hover {
+  background-color: #ff8087;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 154, 158, 0.3);
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  z-index: 10;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 1;
+  background: url('../images/background-pattern.svg') center/cover no-repeat;
+}
+
+.hero-subtext {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  min-height: 3rem;
+}
+
+.typed-cursor {
+  color: var(--primary-color);
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #ff8087;
+}
+
+.btn.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: #5bc0c5;
+}
+
+.btn.fun {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+}
+
+.btn.fun:hover {
+  background-color: #f9d678;
+}
+
+/* Mini intro panel */
+.mini-intro {
+  padding: 4rem 5%;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.card {
+  flex: 0 0 280px;
+  margin-right: 1.5rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  text-align: left;
+  scroll-snap-align: start;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+/* Content sections */
+.content-section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.content-section h2 {
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.content-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.section-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+.section-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.section-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Call to action section */
+.cta {
+  padding: 5rem 5%;
+  text-align: center;
+  background-color: var(--accent-color);
+  position: relative;
+}
+
+.cta h2 {
+  max-width: 600px;
+  margin: 0 auto 1rem auto;
+}
+
+.cta h2:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 6rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.contact-method {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+}
+
+.contact-method i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-method h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-method p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ff8c9c;
+  transform: translateY(-3px);
+}
+
+/* Toast notifications */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background-color: var(--dark-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Form messages */
+.form-message {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.form-message.success {
+  background-color: #e3fcef;
+  color: #0ca678;
+  border: 1px solid #c3fae8;
+}
+
+.form-message.error {
+  background-color: #fff5f5;
+  color: #e03131;
+  border: 1px solid #ffe3e3;
+}
+
+.form-message.fade-out {
+  animation: fadeOut 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Responsive styles for contact section */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 3rem 5%;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  color: var(--light-color);
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+.signature {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Animation for elements */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul.active {
+    height: calc(100vh - 80px);
+    padding: 2rem 0;
+  }
+  
+  nav ul li {
+    margin: 1rem 0;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .button-group .btn {
+    width: 100%;
+  }
+  
+  .card {
+    flex: 0 0 85%;
+  }
+
+  .content-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .section-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtext {
+    font-size: 1.2rem;
+  }
+  
+  .card {
+    flex: 0 0 90%;
+  }
+}

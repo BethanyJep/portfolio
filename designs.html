@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bethany Jep | Design Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/designs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3010d94d2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">bethanyjep<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="devrel.html">DevRel</a></li>
+                <li><a href="volunteer.html">Volunteering</a></li>
+                <li><a href="#" class="active">Designs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact" class="highlight">Say Hi</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Design Portfolio</h1>
+            <p class="subtitle">Exploring creativity through UI/UX, illustrations, posters, and sketch notes</p>
+        </div>
+    </section>
+    
+    <!-- Design Filter Navigation -->
+    <section class="design-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+                <button class="filter-btn" data-filter="doodles">Doodles</button>
+                <button class="filter-btn" data-filter="posters">Posters</button>
+                <button class="filter-btn" data-filter="sketch-notes">Sketch Notes</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Design Showcase Section -->
+    <section class="design-showcase">
+        <div class="container">
+            <div class="design-grid">
+                <!-- UI/UX Designs -->
+                <div class="design-item large" data-category="ui-ux">
+                    <img src="images/design-ui-dashboard.jpg" alt="Dashboard UI Design">
+                    <div class="design-overlay">
+                        <h3>Analytics Dashboard</h3>
+                        <p>A responsive dashboard design for tracking user metrics</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="design-item" data-category="ui-ux">
+                    <img src="images/design-ui-mobile.jpg" alt="Mobile App UI">
+                    <div class="design-overlay">
+                        <h3>Mobile Banking App</h3>
+                        <p>User interface for a financial app</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="design-item" data-category="ui-ux">
+                    <img src="images/design-ui-website.jpg" alt="Website Redesign">
+                    <div class="design-overlay">
+                        <h3>E-learning Platform</h3>
+                        <p>Educational website design system</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Doodles -->
+                <div class="design-item" data-category="doodles">
+                    <img src="images/design-doodle1.jpg" alt="Digital Doodle">
+                    <div class="design-overlay">
+                        <h3>Tech Doodles</h3>
+                        <p>Playful illustrations of technology concepts</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="design-item large" data-category="doodles">
+                    <img src="images/design-doodle2.jpg" alt="Character Doodles">
+                    <div class="design-overlay">
+                        <h3>Character Illustrations</h3>
+                        <p>A series of character designs for various contexts</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Posters -->
+                <div class="design-item" data-category="posters">
+                    <img src="images/design-poster1.jpg" alt="Event Poster">
+                    <div class="design-overlay">
+                        <h3>Tech Conference Poster</h3>
+                        <p>Visual design for an annual developer conference</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="design-item" data-category="posters">
+                    <img src="images/design-poster2.jpg" alt="Campaign Poster">
+                    <div class="design-overlay">
+                        <h3>Community Campaign</h3>
+                        <p>Visual identity for a community outreach initiative</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Sketch Notes -->
+                <div class="design-item large" data-category="sketch-notes">
+                    <img src="images/design-sketch1.jpg" alt="Conference Sketch Notes">
+                    <div class="design-overlay">
+                        <h3>Conference Talk Notes</h3>
+                        <p>Visual notes from various tech conference presentations</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="design-item" data-category="sketch-notes">
+                    <img src="images/design-sketch2.jpg" alt="Workshop Sketch Notes">
+                    <div class="design-overlay">
+                        <h3>Workshop Visualizations</h3>
+                        <p>Digital sketch notes from technical workshops</p>
+                        <a href="https://www.behance.net/bethanyjep" class="view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Design Process Section -->
+    <section class="design-process">
+        <div class="container">
+            <h2>My Design Process</h2>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Discovery</h3>
+                    <p>Understanding the problem, researching, and defining project goals</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>Ideation</h3>
+                    <p>Sketching concepts, exploring possibilities, and brainstorming solutions</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Creation</h3>
+                    <p>Developing visual designs, prototypes, and iterative improvements</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Implementation</h3>
+                    <p>Finalizing deliverables, preparing assets, and launching the design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Behance Connect Section -->
+    <section class="behance-connect">
+        <div class="container">
+            <div class="behance-content">
+                <h2>See More on Behance</h2>
+                <p>Explore my complete portfolio with detailed case studies and project documentation</p>
+                <a href="https://www.behance.net/bethanyjep" target="_blank" class="behance-btn">
+                    <i class="fab fa-behance"></i> Visit My Behance
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tools Section -->
+    <section class="design-tools">
+        <div class="container">
+            <h2>Tools I Use</h2>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <img src="images/tool-figma.svg" alt="Figma">
+                    <h3>Figma</h3>
+                </div>
+                <div class="tool-item">
+                    <img src="images/tool-sketch.svg" alt="Sketch">
+                    <h3>Sketch</h3>
+                </div>
+                <div class="tool-item">
+                    <img src="images/tool-illustrator.svg" alt="Adobe Illustrator">
+                    <h3>Illustrator</h3>
+                </div>
+                <div class="tool-item">
+                    <img src="images/tool-photoshop.svg" alt="Adobe Photoshop">
+                    <h3>Photoshop</h3>
+                </div>
+                <div class="tool-item">
+                    <img src="images/tool-procreate.svg" alt="Procreate">
+                    <h3>Procreate</h3>
+                </div>
+                <div class="tool-item">
+                    <img src="images/tool-xd.svg" alt="Adobe XD">
+                    <h3>Adobe XD</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">bethanyjep<span>.</span></div>
+                <p>Crafting digital experiences with code and creativity.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Bethany Jep. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/designs.js"></script>
+</body>
+</html>

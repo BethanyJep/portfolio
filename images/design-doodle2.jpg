@@ -1,0 +1,60 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f2f7ff"/>
+  
+  <!-- Character doodles -->
+  <!-- Character 1 -->
+  <circle cx="200" cy="150" r="70" fill="#ffcbdb"/>
+  <circle cx="170" cy="130" r="15" fill="white"/>
+  <circle cx="230" cy="130" r="15" fill="white"/>
+  <circle cx="170" cy="130" r="8" fill="#333"/>
+  <circle cx="230" cy="130" r="8" fill="#333"/>
+  <path d="M180,170 Q200,190 220,170" fill="none" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Character 2 -->
+  <rect x="100" y="300" width="200" height="150" rx="20" fill="#a4dfff"/>
+  <circle cx="150" cy="350" r="15" fill="white"/>
+  <circle cx="250" cy="350" r="15" fill="white"/>
+  <circle cx="150" cy="350" r="8" fill="#333"/>
+  <circle cx="250" cy="350" r="8" fill="#333"/>
+  <path d="M150,400 Q200,430 250,400" fill="none" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <rect x="180" cy="300" width="40" height="20" fill="#a4dfff"/>
+
+  <!-- Character 3 -->
+  <circle cx="600" cy="200" r="100" fill="#b4f2c8"/>
+  <circle cx="560" cy="170" r="20" fill="white"/>
+  <circle cx="640" cy="170" r="20" fill="white"/>
+  <circle cx="560" cy="170" r="10" fill="#333"/>
+  <circle cx="640" cy="170" r="10" fill="#333"/>
+  <path d="M560,240 Q600,260 640,240" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <path d="M520,120 L550,150" fill="none" stroke="#333" stroke-width="3"/>
+  <path d="M680,120 L650,150" fill="none" stroke="#333" stroke-width="3"/>
+  
+  <!-- Character 4 -->
+  <rect x="450" y="350" width="300" height="200" rx="40" fill="#d4c4fb"/>
+  <rect x="550" y="350" width="100" height="50" rx="20" fill="#d4c4fb"/>
+  <circle cx="520" cy="400" r="25" fill="white"/>
+  <circle cx="680" cy="400" r="25" fill="white"/>
+  <circle cx="520" cy="400" r="15" fill="#333"/>
+  <circle cx="680" cy="400" r="15" fill="#333"/>
+  <path d="M550,470 Q600,500 650,470" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Character 5 -->
+  <circle cx="200" cy="600" r="80" fill="#ffd6a5"/>
+  <circle cx="170" cy="580" r="15" fill="white"/>
+  <circle cx="230" cy="580" r="15" fill="white"/>
+  <circle cx="170" cy="580" r="8" fill="#333"/>
+  <circle cx="230" cy="580" r="8" fill="#333"/>
+  <path d="M180,620 Q200,610 220,620" fill="none" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <path d="M150,540 L170,560" fill="none" stroke="#333" stroke-width="3"/>
+  <path d="M250,540 L230,560" fill="none" stroke="#333" stroke-width="3"/>
+  
+  <!-- Character 6 -->
+  <ellipse cx="600" cy="630" rx="120" ry="90" fill="#ff9a9e"/>
+  <circle cx="550" cy="600" r="25" fill="white"/>
+  <circle cx="650" cy="600" r="25" fill="white"/>
+  <circle cx="550" cy="600" r="13" fill="#333"/>
+  <circle cx="650" cy="600" r="13" fill="#333"/>
+  <path d="M550,660 Q600,690 650,660" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <path d="M520,560 Q490,540 480,570" fill="none" stroke="#333" stroke-width="3"/>
+  <path d="M680,560 Q710,540 720,570" fill="none" stroke="#333" stroke-width="3"/>
+</svg>

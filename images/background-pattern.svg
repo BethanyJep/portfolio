@@ -1,0 +1,19 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <circle cx="400" cy="300" r="60" fill="#FF9A9E" />
+    <circle cx="1200" cy="600" r="80" fill="#67D8DE" />
+    <circle cx="600" cy="700" r="40" fill="#FFEAA7" />
+    <circle cx="1000" cy="200" r="70" fill="#FF9A9E" />
+    <circle cx="200" cy="600" r="50" fill="#67D8DE" />
+    <path d="M300,100 Q600,400 900,100" stroke="#FF9A9E" stroke-width="4" fill="none" />
+    <path d="M1300,800 Q1000,500 700,800" stroke="#67D8DE" stroke-width="4" fill="none" />
+    <rect x="700" y="400" width="30" height="30" fill="#FFEAA7" transform="rotate(45 700 400)" />
+    <rect x="400" y="500" width="20" height="20" fill="#FFEAA7" transform="rotate(30 400 500)" />
+    <rect x="1100" y="300" width="25" height="25" fill="#FFEAA7" transform="rotate(15 1100 300)" />
+    <path d="M100,300 L150,350 L100,400 z" fill="#FF9A9E" />
+    <path d="M1500,600 L1450,650 L1500,700 z" fill="#67D8DE" />
+    <line x1="800" y1="100" x2="800" y2="200" stroke="#FF9A9E" stroke-width="4" />
+    <line x1="850" y1="100" x2="850" y2="200" stroke="#67D8DE" stroke-width="4" />
+    <line x1="900" y1="100" x2="900" y2="200" stroke="#FFEAA7" stroke-width="4" />
+  </g>
+</svg>

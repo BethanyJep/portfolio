@@ -1,0 +1,36 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1a1a2e"/>
+  
+  <!-- Conference Poster Design -->
+  <rect x="100" y="100" width="600" height="600" rx="0" fill="#16213e"/>
+  
+  <!-- Title Background -->
+  <polygon points="100,200 700,150 700,300 100,350" fill="#0f3460"/>
+  
+  <!-- Conference Title -->
+  <text x="400" y="250" font-family="Arial" font-size="45" font-weight="bold" text-anchor="middle" fill="#e94560">TECH SUMMIT 2025</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="320" font-family="Arial" font-size="25" text-anchor="middle" fill="#ffffff">THE FUTURE OF DEVELOPMENT</text>
+  
+  <!-- Design Elements -->
+  <circle cx="200" cy="450" r="70" fill="none" stroke="#e94560" stroke-width="8"/>
+  <circle cx="200" cy="450" r="40" fill="none" stroke="#e94560" stroke-width="5"/>
+  
+  <polygon points="400,400 450,480 350,480" fill="none" stroke="#e94560" stroke-width="5"/>
+  <polygon points="400,400 450,480 350,480" fill="none" stroke="#ffffff" stroke-width="2"/>
+  
+  <rect x="500" y="400" width="100" height="100" rx="0" fill="none" stroke="#e94560" stroke-width="5"/>
+  <rect x="520" y="420" width="60" height="60" rx="0" fill="none" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Details -->
+  <text x="400" y="550" font-family="Arial" font-size="20" text-anchor="middle" fill="#ffffff">JUNE 15-18, 2025 • SAN FRANCISCO</text>
+  
+  <!-- Bottom Info -->
+  <rect x="100" y="620" width="600" height="80" rx="0" fill="#0f3460"/>
+  <text x="400" y="670" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffffff">REGISTER AT TECHSUMMIT2025.COM</text>
+  
+  <!-- Logo Placeholder -->
+  <circle cx="150" cy="150" r="30" fill="#e94560"/>
+  <text x="150" y="158" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#ffffff">TS</text>
+</svg>

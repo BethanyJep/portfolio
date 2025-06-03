@@ -1,0 +1,32 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff8e6"/>
+  
+  <!-- Tech doodle elements -->
+  <circle cx="200" cy="200" r="100" fill="none" stroke="#ff9a9e" stroke-width="4"/>
+  <circle cx="200" cy="200" r="80" fill="none" stroke="#ff9a9e" stroke-width="4" stroke-dasharray="10,10"/>
+  <rect x="170" y="170" width="60" height="60" rx="10" fill="#ff9a9e" opacity="0.5"/>
+  
+  <path d="M400,150 C450,100 550,100 600,150 C650,200 650,300 600,350 C550,400 450,400 400,350 C350,300 350,200 400,150 Z" 
+        fill="none" stroke="#67d8de" stroke-width="4"/>
+  <circle cx="500" cy="250" r="50" fill="#67d8de" opacity="0.3"/>
+  <text x="500" y="260" font-family="Arial" font-size="24" text-anchor="middle">Code</text>
+  
+  <path d="M150,450 L250,450 L250,600 L150,600 Z" fill="none" stroke="#ffeaa7" stroke-width="4"/>
+  <rect x="170" y="480" width="60" height="10" rx="5" fill="#ffeaa7"/>
+  <rect x="170" y="500" width="40" height="10" rx="5" fill="#ffeaa7"/>
+  <rect x="170" y="520" width="50" height="10" rx="5" fill="#ffeaa7"/>
+  <rect x="170" y="540" width="30" height="10" rx="5" fill="#ffeaa7"/>
+  <rect x="170" y="560" width="55" height="10" rx="5" fill="#ffeaa7"/>
+  
+  <g transform="translate(400, 450)">
+    <circle cx="0" cy="0" r="30" fill="#b4a7ff"/>
+    <circle cx="75" cy="0" r="30" fill="#b4a7ff"/>
+    <circle cx="37.5" cy="65" r="30" fill="#b4a7ff"/>
+    <path d="M0,0 L75,0 L37.5,65 Z" fill="none" stroke="#6757de" stroke-width="3"/>
+    <text x="37.5" y="25" font-family="Arial" font-size="12" text-anchor="middle">API</text>
+  </g>
+  
+  <path d="M650,450 C680,450 700,480 700,500 C700,540 650,570 610,550 C590,610 520,610 500,550 C460,570 410,540 410,500 C410,480 430,450 460,450 C480,430 510,440 530,460 C550,440 630,430 650,450 Z"
+        fill="none" stroke="#ff7eb3" stroke-width="3"/>
+  <text x="555" y="510" font-family="Arial" font-size="24" text-anchor="middle">♥</text>
+</svg>
